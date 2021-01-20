@@ -23,7 +23,7 @@ RUN apk update && apk add git \
 #
 # Pull source code
 #
-RUN git clone https://github.com/bitcoin/bitcoin --branch master --single-branch
+RUN git clone https://github.com/bitcoin/bitcoin --branch v0.21.0 --single-branch
 
 #
 # Do the actual build
@@ -74,7 +74,7 @@ COPY startup.sh /startup.sh
 #
 # Expose the port for the RPC interface
 #
-EXPOSE 18332/tcp
+EXPOSE 18443/tcp
 
 #
 # Start the bitcoin server
