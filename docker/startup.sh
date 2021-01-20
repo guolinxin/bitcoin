@@ -19,4 +19,4 @@ fi
 #
 # Now start the actual daemon
 #
-/usr/local/bin/bitcoind -conf=/bitcoin.conf -regtest=1 -server=1 -printtoconsole -txindex=1
+/usr/local/bin/bitcoind -conf=/bitcoin.conf -regtest=1 -server=1 -printtoconsole -txindex=1 -fallbackfee=0.0002
